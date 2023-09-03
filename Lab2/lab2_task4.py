@@ -14,7 +14,7 @@ pi.set_mode(gpio.BCM)
 pi.set_PWM_dutycycle(50)
 
 #Start the PWM signal by setting the frequency
-pi.set_PWM_frequency()
+pi.set_PWM_frequency(channel, frequency)
  
 #Measure the frequency set on the pin
 print(pi.get_PWM_frequency())
